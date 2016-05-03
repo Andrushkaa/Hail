@@ -2,16 +2,10 @@
 @{
     ViewBag.Title = "Room";
 }
-<link href="~/Styles/Constructor.css" rel="stylesheet" />
+<link href="~/Styles/Room.css" rel="stylesheet" />
 <head>
     <title>@Model.ChatName</title>
     <style type="text/css">
-        .container {
-            background-color: #99CCFF;
-            border: thick solid #808080;
-            padding: 20px;
-            margin: 20px;
-        }
 
         div.scroll {
             background-color: #00FFFF;
@@ -30,23 +24,45 @@
         }
     </style>
 </head>
-<body>
+
+<header>
+    <h1>Chat Room : @Model.ChatName</h1>
+    <h2>user : @Model.UserName</h2>
+</header>
+
+<section id="main" role="main">
+    <div id="chat">
+        <i id="avatar" class="face12"></i>
+        <input type="text" id="input" placeholder="Type your message...">
+        <a class="button" id="sendmessage" style="visibility:hidden" >Send</a>
+        <a class="button" id="connect" >Connect</a>
+    </div>
+
+
+    <p id="presence"></p>
+    <div id="output"></div>
+</section>
+@*<body>
     <form>
         <header>Room : @Model.ChatName</header>
         <ul id="discussion"></ul>
-        <div id="container" class="container" style="visibility : hidden ;align-self:flex-end">
-
-            <input type="text" id="message" />
-            <input type="button" id="sendmessage" value="Send" />
-            <input type="button" id="connect" value="Connect" />
-        </div>
-        
+       <input type="text" id="message" />
+            
+        <a class="button" id="connect" value="Connect" />
     </form>
-</body>
+    <input type="button" id="sendmessage" value="Send" />
+</body>*@
 <script src="~/scripts/jquery-1.10.2.min.js"></script>
 <script src="~/scripts/jquery.signalR-2.2.0.min.js"></script>
 <script src="~/signalr/hubs"></script>
 <script type="text/javascript">
+
+    function updateScrollbar() {
+        $messages.scroll("update").scroll('scrollTo', 'bottom', {
+            scrollInertia: 10,
+            timeout: 0
+        });
+    }
     $(function () {
         // Declare a proxy to reference the hub.
         var chat = $.connection.room;
@@ -57,8 +73,10 @@
             var encodedName = $('<div />').text(userName).html();
             var encodedMsg = $('<div />').text(message).html();
             // Add the message to the page.
-            $('#discussion').append('<li><strong>' + encodedName
-                + '</strong>:&nbsp;&nbsp;' + encodedMsg + '</li>');
+            $('#output').prepend('<p><span>  ' + date+" / " + userName + "  :" + message + '</span></p>');
+           
+            //$('#discussion').append('<li><strong>' + encodedName
+            //    + '</strong>:&nbsp;&nbsp;' + encodedMsg + '</li>');
         };
         // Set initial focus to message input box.
         $('#message').focus();
@@ -66,14 +84,20 @@
         $.connection.hub.start().done(function () {
             $('#sendmessage').click(function () {
                 // Call the Send method on the hub.
-                chat.server.sendMessage("@Model.UserName", $('#message').val(), "@Model.ChatId", "text");
+                msg = $('#input').val();
+                if ($.trim(msg) == '') {
+                    return false;
+                }
+                chat.server.sendMessage("@Model.UserName", msg, "@Model.ChatId", "text");
+                $('#input').val('').focus();
+                @*chat.server.sendMessage("@Model.UserName", $('#message').val(), "@Model.ChatId", "text");
                 // Clear text box and reset focus for next comment.
-                $('#message').val('').focus();
+                $('#message').val('').focus();*@
             });
             $('#connect').click(function () {
                 document.getElementById("connect").style.visibility = "hidden";
                 chat.server.connectToGroup("@Model.ChatId");
-                document.getElementById("container").style.visibility = "visible";
+                document.getElementById("sendmessage").style.visibility = "visible";
 
             });
         });
