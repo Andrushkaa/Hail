@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Hail_TestModelStoreContainer" CdmEntityContainer="HailEntities">
+    <EntitySetMapping Name="ChatRooms">
+      <EntityTypeMapping TypeName="Hail_TestModel.ChatRoom">
+        <MappingFragment StoreEntitySet="ChatRoom">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CRName" ColumnName="CRName" />
+          <ScalarProperty Name="CRPassword" ColumnName="CRPassword" />
+          <ScalarProperty Name="CRTheme" ColumnName="CRTheme" />
+          <ScalarProperty Name="CRDeleted" ColumnName="CRDeleted" />
+          <ScalarProperty Name="CRActive" ColumnName="CRActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

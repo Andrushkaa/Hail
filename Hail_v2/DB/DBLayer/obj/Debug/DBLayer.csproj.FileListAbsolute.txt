@@ -1,0 +1,8 @@
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\DB\DBLayer\bin\Debug\DBLayer.dll.config
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\DB\DBLayer\bin\Debug\DBLayer.dll
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\DB\DBLayer\bin\Debug\DBLayer.pdb
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\DB\DBLayer\bin\Debug\EntityFramework.dll
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\DB\DBLayer\bin\Debug\EntityFramework.xml
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\DB\DBLayer\obj\Debug\DBLayer.csprojResolveAssemblyReference.cache
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\DB\DBLayer\obj\Debug\DBLayer.dll
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\DB\DBLayer\obj\Debug\DBLayer.pdb

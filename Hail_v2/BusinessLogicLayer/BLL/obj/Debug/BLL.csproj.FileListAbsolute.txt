@@ -1,0 +1,11 @@
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\bin\Debug\BLL.dll
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\bin\Debug\BLL.pdb
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\bin\Debug\DAL.dll
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\bin\Debug\DBLayer.dll
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\bin\Debug\EntityFramework.dll
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\bin\Debug\DBLayer.pdb
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\bin\Debug\DAL.pdb
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\bin\Debug\EntityFramework.xml
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\obj\Debug\BLL.dll
+C:\Users\BigMan\Documents\Visual Studio 2015\Projects\Hail_v2\BusinessLogicLayer\BLL\obj\Debug\BLL.pdb

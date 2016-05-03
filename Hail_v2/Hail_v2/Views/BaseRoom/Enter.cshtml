@@ -1,0 +1,24 @@
+﻿@model Hail_v2.Models.BaseTitle
+@{
+    ViewBag.Title = "Enter";
+}
+<link href="~/Styles/Constructor.css" rel="stylesheet" />
+<form>
+    <header>Enter chat room</header>
+    <label>Chat room name<span>*</span></label>
+    <input id="CRName" />
+    <label>Chat room password <span>*</span></label>
+    <input id="CRPassword" />
+    <a class="button" onclick="enter()">Enter</a>
+</form>
+<script src="~/scripts/Custom/CommonFunctions.js"></script>
+<script type="text/javascript" language="javascript">
+    function enter() {
+        var crName = document.getElementById('CRName') ;
+        var crPass = document.getElementById('CRPassword');
+        if (crName != "" && crPass != "") {
+            var url = getBaseURL() + "ChatRoom/Room?name=" + "@Model.Name" + "&roomName=" + crName.value + "&roomPassword=" + crPass.value;
+            window.location = url;
+        }
+    }
+</script>

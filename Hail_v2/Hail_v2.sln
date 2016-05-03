@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hail_v2", "Hail_v2\Hail_v2.csproj", "{16A5985F-5DD0-493A-9F19-7139240B3E0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{35A4A4A4-0F66-4F8A-906A-E6ACCF595469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBLayer", "DB\DBLayer\DBLayer.csproj", "{440F11D5-3DD5-4E55-87AD-C51A55B6719E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{DC078736-3BE6-476E-8D71-930FC41F66C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "Persistence\DAL\DAL.csproj", "{3FE95A1F-75FD-4E35-AC92-B1B2EBCD61EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogicLayer", "BusinessLogicLayer", "{1660298B-776D-4B47-B09D-171C5D70C1DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BusinessLogicLayer\BLL\BLL.csproj", "{D3190359-646F-4137-A644-C5BE94762B62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7CD0A3D8-A41F-468D-91FE-A774339E17BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HailTests", "Tests\HailTests\HailTests.csproj", "{E4EF7664-C583-435A-9A4C-1DC3D35B0F6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16A5985F-5DD0-493A-9F19-7139240B3E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A5985F-5DD0-493A-9F19-7139240B3E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A5985F-5DD0-493A-9F19-7139240B3E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A5985F-5DD0-493A-9F19-7139240B3E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{440F11D5-3DD5-4E55-87AD-C51A55B6719E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440F11D5-3DD5-4E55-87AD-C51A55B6719E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440F11D5-3DD5-4E55-87AD-C51A55B6719E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440F11D5-3DD5-4E55-87AD-C51A55B6719E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE95A1F-75FD-4E35-AC92-B1B2EBCD61EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE95A1F-75FD-4E35-AC92-B1B2EBCD61EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE95A1F-75FD-4E35-AC92-B1B2EBCD61EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE95A1F-75FD-4E35-AC92-B1B2EBCD61EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3190359-646F-4137-A644-C5BE94762B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3190359-646F-4137-A644-C5BE94762B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3190359-646F-4137-A644-C5BE94762B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3190359-646F-4137-A644-C5BE94762B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4EF7664-C583-435A-9A4C-1DC3D35B0F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4EF7664-C583-435A-9A4C-1DC3D35B0F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4EF7664-C583-435A-9A4C-1DC3D35B0F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4EF7664-C583-435A-9A4C-1DC3D35B0F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{440F11D5-3DD5-4E55-87AD-C51A55B6719E} = {35A4A4A4-0F66-4F8A-906A-E6ACCF595469}
+		{3FE95A1F-75FD-4E35-AC92-B1B2EBCD61EA} = {DC078736-3BE6-476E-8D71-930FC41F66C2}
+		{D3190359-646F-4137-A644-C5BE94762B62} = {1660298B-776D-4B47-B09D-171C5D70C1DD}
+		{E4EF7664-C583-435A-9A4C-1DC3D35B0F6A} = {7CD0A3D8-A41F-468D-91FE-A774339E17BC}
+	EndGlobalSection
+EndGlobal

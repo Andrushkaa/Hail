@@ -1,0 +1,32 @@
+﻿@model Hail_v2.Models.BaseTitle
+@{
+    ViewBag.Title = "Base";
+}
+<link href="~/Styles/Base.css" rel="stylesheet" />
+<div class="leaderboard">
+    <h1 id="name">
+        HI @Model.Name !
+    </h1>
+    <ol>
+        <li onclick="newRoom()">
+            <mark>New chat room</mark>
+            <small>you can invite your friends</small>
+        </li>
+
+        <li onclick="enterRoom()">
+            <mark>Enter the room</mark>
+            <small>you can start chatting</small>
+        </li>
+    </ol>
+</div>
+<script src="~/scripts/Custom/CommonFunctions.js"></script>
+<script type="text/javascript" language="javascript">
+    function newRoom() {
+        var url = getBaseURL() + "BaseRoom/Constructor?name=" + "@Model.Name";
+        window.location = url;
+    }
+    function enterRoom() {
+        var url = getBaseURL() + "BaseRoom/Enter?name=" + "@Model.Name";
+        window.location = url;
+    }
+</script>

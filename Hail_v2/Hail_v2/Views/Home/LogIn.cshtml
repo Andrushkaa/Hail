@@ -1,0 +1,26 @@
+﻿<link href="~/Styles/LogIn.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "LogIn";
+}
+<h2>Log In ;)</h2>
+
+<input id="name" style="width:150px; height : 40px;font-weight: initial" placeholder="Set your name here" />
+<a id='logIn' class="button" onclick="redirect()">
+    GoGO Hail
+</a>
+<h5 id="Error" style="visibility:hidden;color:red">Name is required</h5>
+
+<script src="~/scripts/Custom/CommonFunctions.js"></script>
+<script type="text/javascript" language="javascript">
+    function redirect() {
+        var name = document.getElementById('name').value ;
+        if (name == '' || name == null) {
+            document.getElementById('Error').style.visibility =  "visible";
+        }
+        else {
+            var url = getBaseURL() + "BaseRoom/Base?name=" + name;
+            window.location = url;
+        }
+    }
+</script>
+
